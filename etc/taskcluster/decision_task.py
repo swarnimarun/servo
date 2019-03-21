@@ -310,6 +310,10 @@ def windows_unit():
             "mach fetch",
 
             "mach build --dev",
+            "set RUST_LOG=debug",
+            "mach run tests/html/close-on-load.html",
+            #"mach smoketest --angle",
+            "set RUST_LOG=",
             "mach test-unit",
             "mach package --dev",
         )
